@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+
+header{
+color:#FF69B4;
+text-align:center;
+width: 100%;
+}
+footer{
+padding: 20px;
+
+}
+
+.input{
+text-align:center; 
+width:100%;
+}
+.form-input{
+padding:7px;
+border-radius: 25px;
+width: 250px;
+ 
+}
+.button{
+  border-radius: 20px;
+  background-size:100%;
+  background:#FF69B4;
+  padding: 18px; 
+  width: 200px;
+}
+
+.github{
+width:40px;
+height:40px;
+align:center;
+}
+.linkedin{
+width:40px;
+height:40px;
+align:center;
+}
+body{
+background-repeat:no-repeat;
+background-image: url('https://mypvhc.com/wp-content/uploads/2018/10/shutterstock_363726362.jpg');
+background-size: 100% 100%;
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+<header>
+    <h1>BREAST CANCER CLASSIFICATION</h1>
+</header>
+<br>
+<br>
+
+
+
+
+
+<div class="input">
+
+<h1 style="color:#FF69B4;">Please Enter Values:</h1>
+
+<!-- Text Area -->
+<form action="{{ url_for('predict') }}" method="POST" >
+           <b> <input class="form-input" type="text", name='Radius', placeholder="Enter Radius value"> <br><br>
+            <input class="form-input" type="text", name='Texture', placeholder="Enter Texture value"> <br><br>
+            <input class="form-input" type="text", name='Area', placeholder="Enter Area Value"> <br><br>
+            <input class="form-input" type="text", name='Smoothness', placeholder="Enter Smoothness Value"> <br><br>
+            <input class="form-input" type="text", name='Compactness', placeholder="Enter Compactness Value"> <br><br>
+            <input class="form-input" type="text", name='Concavity', placeholder="Enter Concavity"> <br><br>
+             <input class="form-input" type="text", name='Concave', placeholder="Enter Concave Points"> <br><br>
+             <input class="form-input" type="text", name='symmetry', placeholder="Enter Symmetry Points"> <br><br>
+            <input class="form-input" type="text", name='fractal_dimension', placeholder=" Enter Fractal Dimension Value"> <br><br>
+           </b>
+            <input class="button" type="submit" , value='predict!' >
+        </form>
+<br>
+<br>
+</div>
+
+<!-- Footer -->
+
+<footer>
+<center>
+<a href="https://github.com/Venukiran004/Breast_Cancer_classification" >
+<img class="github" src="https://image.freepik.com/free-icon/github-logo_318-53553.jpg" alt="github">
+</a>
+<a href="https://www.linkedin.com/in/venukiran-sankar-6b6b8b96/">
+<img class="linkedin" src="http://encomium.ng/wp-content/uploads/2016/01/LinkedIn-Logo.png" alt="linkedin">
+</center>
+</footer>
+     
+</body>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+
+header{
+color:#FF1493;
+text-align:center;
+width: 100%;
+}
+footer{
+padding: 20px;
+
+}
+
+.input{
+text-align:center; 
+width:100%;
+color:#FF1493;
+}
+
+.github{
+width:40px;
+height:40px;
+align:center;
+}
+.linkedin{
+width:40px;
+height:40px;
+align:center;
+}
+.positive{
+width:150px;
+height:150px;
+align:center;
+}
+.negative{
+width:50px;
+height:50px;
+align:center;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<header>
+    <h1>BREAST CANCER CLASSIFICATION</h1>
+</header>
+<br>
+<br>
+
+<div class="input">
+<center>
+
+
+
+       {%if prediction==1 %}
+              <h1>Prediction: Sorry! You have Cancer.</span></h1>
+              <img class="positive" src="http://img1.etsystatic.com/005/0/5987248/il_fullxfull.365908409_9qg7.jpg" alt="positive">
+              
+       {% elif prediction==0 %}
+              <br>
+             
+	      <h1>Great! You DON'T have Cancer</h1><br>
+              <img class="positive" src="https://i.pinimg.com/originals/a8/50/2c/a8502cb158d5eac79b7902fdc76074e6.gif" alt="positive">
+              
+     
+       {% endif %}
+     <br><br><br><br><br>
+    <a href='/'>go back to home page</a>
+</center>
+<br>
+
+</div>
+ 
+
+<!-- Footer -->
+<footer>
+<center>
+
+<a href="https://github.com/Venukiran004/Breast_Cancer_classification" >
+<img class="github" src="https://image.freepik.com/free-icon/github-logo_318-53553.jpg" alt="github">
+</a>
+<a href="https://www.linkedin.com/in/venukiran-sankar-6b6b8b96/">
+<img class="linkedin" src="http://encomium.ng/wp-content/uploads/2016/01/LinkedIn-Logo.png" alt="linkedin">
+</center>
+</footer>
+     
+</body>
